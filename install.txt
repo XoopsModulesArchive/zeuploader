@@ -1,0 +1,33 @@
+Pour installer Ze Uploader 0.6:
+-> télécharger le répertoire zeuploader dans le répertoire modules de votre site
+-> changer les permissions du répertoire upload_dir (chmod 777)
+-> activer le module
+
+Pour changer le répertoire de destination des fichiers téléchargés:
+-> éditer le fichier config.php qui se trouve dans le répertoire include
+-> changer la valeur de la variable $dir
+-> créer le répertoire correspondant à $dir
+-> changer les permissions du répertoire correspondant à $dir (chmod 777)
+
+Pour changer la taille maximale des fichiers téléchargeables:
+-> éditer le fichier config.php qui se trouve dans le répertoire include
+-> changer la valeur de la variable $sizemax
+
+Pour afficher/ne pas afficher la liste des fichiers téléchargés:
+-> éditer le fichier config.php qui se trouve dans le répertoire include
+-> changer la valeur de la variable $affichage (oui pour afficher)
+
+Pour donner/ne pas donner la possibilité de "downloader" les fichiers "uploadés":
+-> éditer le fichier config.php qui se trouve dans le répertoire include
+-> changer la valeur de la variable $liens (oui pour donner)
+
+Pour changer la liste des types de fichiers téléchargeables:
+-> éditer le fichier config.php qui se trouve dans le répertoire include
+-> lister les différentes extensions autorisées dans le tableau $ext
+
+l emplacement du répertoire peut etre donné de maniere absolue,
+c'est à dire à partir de la racine (/ sous Linux, x:\\ sous Windows),
+ou de manière relative par rapport au répertoire principal du module,
+c'est à dire le répertoire zeuploader, qui contient index.php.
+
+http://www.XoopsOnLine.com, l'hébergeur Xoops!
